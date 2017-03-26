@@ -1,0 +1,146 @@
+
+/*LAYOUT*/
+
+* {
+margin: 0;
+}
+
+.wrapper  {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*FONTS*/
+
+p {
+  font-size: 20px;
+}
+
+/*NAMECARD*/
+
+.cardoutline {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    padding: 5px 0 5px 0;
+    border-radius: 25px;
+    background: red;
+    width: 400px;
+    height: 240px;
+}
+.inside {
+    background: white;
+    width: 400px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.words {
+  text-align: center;
+  color: white;
+}
+
+#hello {
+  font-size: 40px;
+}
+
+#name {
+  font-size: 25px;
+  padding-bottom: 3px;
+}
+
+#sher{
+  font-size: 60px;
+  color: black;
+}
+
+/*SUMMARY */
+#summary:first-of-type:first-letter {
+  float: left;
+  font-size: 59px;
+  line-height: 65px;
+  font-weight: 500;
+}
+
+
+/*MOREINFO*/
+#moreinfo , #aboutme , #history , #skills {
+  font-size: 25px;
+  background: #FFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  display: inline-block;
+}
+
+#moreinfo  {
+  margin-top: 30px;
+  width: 100px;
+  text-align: center;
+  padding: 0;
+}
+
+#aboutme , #history , #skills {
+  width: 150px;
+  text-align: center;
+}
+
+
+/*Transformation*/
+.box, .history, .FAQ {
+   -webkit-transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    transform: translate(0, 0);
+    transition: transform 500ms ease-in;
+}
+
+.movenamecard {
+  transform: translate(0px, -50px);
+  transition: transform 500ms ease-in;
+}
+
+.movemain {
+  transform: translate(0px, -50px);
+  transition: transform 500ms ease-in;
+}
+
+.movemoreinfo {
+  transform: translate(0px, -50px);
+  transition: transform 500ms ease-in;
+}
+
+.flyawaymoreinfo {
+  transform: translate(0, -1000px);
+  transition: transform 1000ms ease-in;
+}
+
+.moveothers {
+  transform: translate(0, -80px);
+  transition: transform 1000ms ease-in;
+}
+
+/*.block li {
+    padding: 0 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+}*/

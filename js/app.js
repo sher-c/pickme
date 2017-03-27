@@ -2,20 +2,24 @@ $(document).ready(function () {
 
 // hide stuff
   $('#summary').hide();
-  $('#aboutme').hide();
+  $('.me').hide();
   $('#history').hide();
   $('#skills').hide();
   $('#contact').hide();
   $('.namecard2').hide();
   $('.skillschart').hide();
+  $('.background').hide();
 
 // dim variables
   var namecard = $('.namecard');
   var summary = $('#summary');
   var others = $('.others');
   var namecard2 = $('.namecard2');
-  var aboutme = $('#aboutme');
+  var me = $('.me');
   var skills = $('#skills');
+  var skillschart =$('.skillschart');
+  var history =$('#history');
+  var background =$('.background')
 
 // namecard on click function
   namecard.click(function  () {
@@ -35,18 +39,35 @@ $(document).ready(function () {
 
 // Summary on click function
     summary.click(function  () {
-       $('#aboutme').show();
-       aboutme.toggleClass('moveaboutme');
+      $('.me').show();
+       $('.skillschart').hide();
+       $('.background').hide();
+
+       me.toggleClass('moveme');
     } );
 
-//skills chart animate
+//skills on click chart animate
     skills.click(function  () {
     $('.skillschart').show();
+    $('.me').hide();
+    $('.background').hide();
+
+    skillschart.toggleClass('moveskillschart');
+
     $('.skillbar').each(function(){
     	$(this).find('.skillbar-bar').animate({
     		width:$(this).attr('data-percent')
     		},6000);
     	});
     	});
+
+// history on click function
+    history.click(function  () {
+      $('.background').show();
+      $('.me').hide();
+      $('.skillschart').hide();
+      background.toggleClass('movebackground');
+      } );
+
 
 } )

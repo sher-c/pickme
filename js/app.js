@@ -9,6 +9,7 @@ $(document).ready(function () {
   $('.namecard2').hide();
   $('.skillschart').hide();
   $('.background').hide();
+  $('.contactme').hide();
 
 // dim variables
   var namecard = $('.namecard');
@@ -20,6 +21,8 @@ $(document).ready(function () {
   var skillschart =$('.skillschart');
   var history =$('#history');
   var background =$('.background')
+  var contact =$('#contact')
+  var contactme =$('.contactme')
 
 // namecard on click function
   namecard.click(function  () {
@@ -42,6 +45,7 @@ $(document).ready(function () {
       $('.me').show();
        $('.skillschart').hide();
        $('.background').hide();
+       $('.contactme').hide();
 
        me.toggleClass('moveme');
     } );
@@ -51,6 +55,7 @@ $(document).ready(function () {
     $('.skillschart').show();
     $('.me').hide();
     $('.background').hide();
+    $('.contactme').hide();
 
     skillschart.toggleClass('moveskillschart');
 
@@ -66,8 +71,19 @@ $(document).ready(function () {
       $('.background').show();
       $('.me').hide();
       $('.skillschart').hide();
+      $('.contactme').hide();
       background.toggleClass('movebackground');
       } );
+
+// contactme on click function
+      contact.click(function  () {
+      $('.contactme').show();
+      $('.me').hide();
+      $('.skillschart').hide();
+      $('.background').hide();
+      contactme.toggleClass('movecontactme');
+      } );
+
 
 
 } )

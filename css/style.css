@@ -3,6 +3,7 @@
 
 * {
 margin: 0;
+border: 0;
 }
 
 .wrapper  {
@@ -51,9 +52,9 @@ li{
     margin-bottom: 50px;
     padding: 5px 0 5px 0;
     border-radius: 25px;
-    background: red;
     width: 400px;
     height: 240px;
+    background-color: red;
 }
 .inside {
     background: white;
@@ -118,6 +119,20 @@ li{
   text-align: inherit;
 }
 
+/*Contactme*/
+
+input , textarea {
+  font-size: 15px;
+  border-bottom: 1px solid black;
+}
+
+#submit {
+  border: 0;
+  float: right;
+}
+
+
+
 
 /*Transformation*/
 .flyawaynamecard2 {
@@ -145,8 +160,17 @@ li{
   transition: transform 1000ms ease-in;
 }
 
+.movecontactme {
+  transform: translate(0, -200px);
+  transition: transform 1000ms ease-in;
+}
+
 
 /*SKILLBAR*/
+
+span {
+  font-size: 20px;
+}
 
 .skillbar {
 	position:relative;
@@ -164,7 +188,7 @@ li{
 	position:absolute;
 	top:0;
 	left:0;
-  width:200px;
+  width:250px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;

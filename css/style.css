@@ -33,16 +33,29 @@ border: 0;
 .flex4 {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
 }
-/*FONTS*/
 
-p {
-  font-size: 20px;
+/*FONTS*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 li{
   font-size: 17px;
+}
+
+#fulldiv {
+  animation-duration: 2.5s;
+}
+
+#clickfirst {
+  transition-duration: 100s;
+}
+
+#sher, #click {
+  font-family: 'Indie Flower', cursive;
 }
 
 /*NAMECARD*/
@@ -87,24 +100,26 @@ li{
 
 /*SUMMARY */
 
-#aboutme {
-  text-align: center;
-  font-size: 30px;
-}
-
-.information {
+#aboutme{
   text-align: center;
   font-size: 20px;
+}
+
+#contacts {
+  text-align: center;
+  font-size: 16px;
 
 }
 
 /*MOREINFO*/
 
 #summary , #history , #skills , #contact {
-  font-size: 25px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  font-size: 20px;
+  border-style: solid;
+  border-width: 1px;
+  /*box-shadow: 0 10px 20px rgba(0,0,0,0.5);*/
   display: inline-block;
-  padding: 3px 8px;
+  padding: 10px 24px;
   border-radius: 5px;
   text-align: center;
   margin: 0 10px;
@@ -113,7 +128,7 @@ li{
 /*HISTORY*/
 
 .background h {
-  font-size: 25px;
+  font-size: 20px;
 }
 .background li {
   text-align: inherit;
@@ -123,15 +138,21 @@ li{
 
 input , textarea {
   font-size: 15px;
+  padding: 10px;
   border-bottom: 1px solid black;
+  width: 400px;
 }
 
 #submit {
   border: 0;
   float: right;
+  width: 80px;
+  margin: 10px;
 }
 
-
+label {
+  padding: 20px 0 0 0;
+}
 
 
 /*Transformation*/
@@ -189,7 +210,7 @@ span {
 	top:0;
 	left:0;
   width:250px;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	font-size:13px;
 	color:#ffffff;
 	background:#6adcfa;

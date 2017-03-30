@@ -6,12 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
 		<script defer src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
-      <section class="wrapper flex1">
+      <section class="wrapper flex1 animated bounce" id="fulldiv">
         <div class="namecard cardoutline">
           <div class="words">
            <h id="hello">H E L L O</h>
@@ -19,6 +21,7 @@
          </div>
           <div class="inside">
             <h id="sher">SHERLYN</h>
+            <h id="clickfirst" class="animated bounceInRight">click here</h>
           </div>
         </div>
       </section>
@@ -29,7 +32,7 @@
            <p id="more">interested?</p>
          </div>
           <div class="inside">
-            <h id="click">YES!</h>
+            <h id="click">Yes...</h>
           </div>
         </div>
       </section>
@@ -43,73 +46,73 @@
         </div>
       </section>
       <section class="wrapper flex2 me firebrick">
-          <p id="aboutme">"A skilled communicator with a strong risk mindset; able to establish rapport with members of diverse groups.
-            High-energy and confident professional with an infectious enthusiasm for technology.
-            Highly organized and efficient in fast-paced environments; able to prioritize effectively to accomplish objectives with creativity, enthusiasm and humor.""</p>
+          <p id="aboutme">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <br><br><br><br><br>
-          <div class="blue information">
-            <p id="info">Sherlyn Chua</p>
-            <p id="mobile No">90009000</p>
-            <p id="email">sherlynchua.sc@gmail.com</p>
+          <div id="contacts" class="blue information">
+            <p>Sherlyn Chua</p>
+            <p>90009000</p>
+            <p>sherlynchua.sc@gmail.com</p>
           </div>
       </section>
       <section class="wrapper flex4 background firebrick">
-        <h>Bank or America Merrill Lynch | Senior Analyst | Jul 2014 to Current</h> <br>
-        <li>Governance and Control Lead for Audit Issue Management, External Audit, Operational Event Error.</li>
-        <li>Currently oversees the development and design of a Global Escalation Sharepoint tool.</li>
-        <li>Providing risk education and awareness training to continously promote risk culture within the organisation.</li><br><br>
-        <h>Central Control Team| Senior Analyst</h> <br>
-        <li>Onshore management oversight of 10 India Team members.</li>
-        <li>Monthly reconciliation analysis of 10% APAC Balance Sheet (2 Recognition award from Senior Directors).</li>
-        <li>Known as “SWAT” team for interdepartmental/intercompany system flow and balance sheet reporting.</li>
+        <h>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h> <br>
+        <li>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li><br><br>
+        <h>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h> <br>
+        <li>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
       </section>
       <section class="wrapper flex2 skillschart">
-          <div class="skillbar clearfix " data-percent="100%">
+          <div class="skillbar clearfix " data-percent="60%">
           	<div class="skillbar-title" style="background: #d35400;"><span>Operational Risk</span></div>
           	<div class="skillbar-bar" style="background: #e67e22;"></div>
-          	<div class="skill-bar-percent">100%</div>
+          	<div class="skill-bar-percent">60%</div>
           </div> <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix " data-percent="100%">
+          <div class="skillbar clearfix " data-percent="70%">
           	<div class="skillbar-title" style="background: #2980b9;"><span>Audit Issue Management </span></div>
           	<div class="skillbar-bar" style="background: #3498db;"></div>
-          	<div class="skill-bar-percent">100%</div>
+          	<div class="skill-bar-percent">70%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+          	<div class="skillbar-title" style="background: #2c3e50;"><span>External Audit</span></div>
+          	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+          	<div class="skill-bar-percent">80%</div>
           </div> <!-- End Skill Bar -->
 
           <div class="skillbar clearfix " data-percent="90%">
-          	<div class="skillbar-title" style="background: #2c3e50;"><span>External and Corporate Audit</span></div>
-          	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+          	<div class="skillbar-title" style="background: #46465e;"><span>Balance Sheet</span></div>
+          	<div class="skillbar-bar" style="background: #5a68a5;"></div>
           	<div class="skill-bar-percent">90%</div>
           </div> <!-- End Skill Bar -->
 
           <div class="skillbar clearfix " data-percent="100%">
-          	<div class="skillbar-title" style="background: #46465e;"><span>Balance Sheet</span></div>
-          	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+          	<div class="skillbar-title" style="background: #333333;"><span>Excel VBA</span></div>
+          	<div class="skillbar-bar" style="background: #525252;"></div>
           	<div class="skill-bar-percent">100%</div>
           </div> <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix " data-percent="60%">
-          	<div class="skillbar-title" style="background: #333333;"><span>Excel VBA</span></div>
-          	<div class="skillbar-bar" style="background: #525252;"></div>
-          	<div class="skill-bar-percent">60%</div>
-          </div> <!-- End Skill Bar -->
-
           <div class="skillbar clearfix " data-percent="100%">
-          	<div class="skillbar-title" style="background: #27ae60;"><span>Sharepoint/Inforpath</span></div>
+          	<div class="skillbar-title" style="background: #27ae60;"><span>Sharepoint</span></div>
           	<div class="skillbar-bar" style="background: #2ecc71;"></div>
           	<div class="skill-bar-percent">100%</div>
           </div> <!-- End Skill Bar -->
         </section>
 
-       <section class="wrapper flex2 contactme">
-         <form action="https://formspree.io/sherlynchua.sc@gmail.com"
-               method="POST">
-          <div><label for="name">Name </label><input type="text" name="name"</div> <br>
-          <div><input type="email" name="_replyto" placeholder="Email"></div><br>
-          <div><textarea type="message" name="message" placeholder="Type your message here" cols="30" rows="10"></textarea> </div>
-          <div><input id="submit" type="submit" value="Send"></div>
+       <section class="wrapper contactme">
+         <form class="flex4" action="https://formspree.io/sherlynchua.sc@gmail.com"method="POST">
+          <label for="name">Name </label>
+          <input type="text" name="name">
+          <label for="email">Email </label>
+          <input type="email" name="_replyto">
+          <label for="message">Message</label>
+          <textarea type="message" name="message" cols="30" rows="10"></textarea>
+          <input id="submit" type="submit" value="Send">
          </form>
-        </form>
+
 
        </section>
   </body>

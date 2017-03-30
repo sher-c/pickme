@@ -11,6 +11,7 @@ $(document).ready(function () {
   $('.background').hide();
   $('.contactme').hide();
 
+
 // dim variables
   var namecard = $('.namecard');
   var summary = $('#summary');
@@ -37,7 +38,7 @@ $(document).ready(function () {
      $('#history').show();
      $('#skills').show();
      $('#contact').show();
-     others.toggleClass('moveothers');
+     others.addClass('moveothers');
   } );
 
 // Summary on click function
@@ -47,7 +48,7 @@ $(document).ready(function () {
        $('.background').hide();
        $('.contactme').hide();
 
-       me.toggleClass('moveme');
+       me.addClass('moveme');
     } );
 
 //skills on click chart animate
@@ -57,12 +58,12 @@ $(document).ready(function () {
     $('.background').hide();
     $('.contactme').hide();
 
-    skillschart.toggleClass('moveskillschart');
+    skillschart.addClass('moveskillschart');
 
     $('.skillbar').each(function(){
     	$(this).find('.skillbar-bar').animate({
     		width:$(this).attr('data-percent')
-    		},6000);
+      },3000);
     	});
     	});
 
@@ -72,7 +73,7 @@ $(document).ready(function () {
       $('.me').hide();
       $('.skillschart').hide();
       $('.contactme').hide();
-      background.toggleClass('movebackground');
+      background.addClass('movebackground');
       } );
 
 // contactme on click function
@@ -81,7 +82,7 @@ $(document).ready(function () {
       $('.me').hide();
       $('.skillschart').hide();
       $('.background').hide();
-      contactme.toggleClass('movecontactme');
+      contactme.addClass('movecontactme');
       } );
 
 

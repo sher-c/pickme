@@ -47,11 +47,13 @@ li{
 }
 
 #fulldiv {
-  animation-duration: 2.5s;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
 }
 
 #clickfirst {
   transition-duration: 100s;
+  animation-delay: 2s;
 }
 
 #sher, #click {
